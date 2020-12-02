@@ -31,7 +31,7 @@ mongoose.connection.once("open", () => {
 });
 
 // api routes
-app.get("/", (req, res) => res.status(200).send("hello world"));
+app.get("/", (req, res) => res.status(200).send("DO NOT USE ';' AT THE END OF .ENV FILE!!"));
 
 app.post("/upload", (req, res) => {
 	const body = req.body;
